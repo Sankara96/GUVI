@@ -5,4 +5,7 @@ def gcd(a, b):
     return a
 if __name__ == '__main__':
     a = map(int,raw_input().split())
-    print gcd(a[0],a[1])
+    if gcd(a[0],a[1])==1:
+        print "Co-prime"
+    else:
+        print "Not co-prime"
